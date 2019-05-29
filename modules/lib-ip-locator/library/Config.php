@@ -16,12 +16,12 @@ class Config
         $keeper = $options->keeper ?? [];
         if(!is_array($keeper))
             $keeper = (array)$keeper;
-        asort($keeper);
+        arsort($keeper);
 
         $finder = $options->finder ?? [];
         if(!is_array($finder))
             $finder = (array)$finder;
-        asort($finder);
+        arsort($finder);
 
         $configs->libIpLocator->keeper = $keeper;
         $configs->libIpLocator->finder = $finder;
